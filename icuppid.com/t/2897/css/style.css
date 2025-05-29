@@ -1,0 +1,1691 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "Mundial";
+  src: url("../fonts/MundialRegular.otf") format("opentype");
+}
+
+:root {
+  --main-color: #fd6363;
+  --second-color: #4e5356;
+  --alternative-color: #00cad1;
+  --main-text-color: #d7dade;
+  --backgroud-color: #252729;
+  --purple-color: #9756e2;
+  --footer-text-color: #8c8f91;
+  --font-mundial: "Mundial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+form,
+.step {
+  height: 100%;
+  width: 100%;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: var(--font-mundial);
+}
+
+body {
+  /* position: relative; */
+  font-weight: 400;
+  color: #1a1a1a;
+  background-color: var(--backgroud-color);
+  -webkit-transition: background-color 0.1s ease-out 1s;
+  -moz-transition: background-color 0.1s ease-out 1s;
+  -o-transition: background-color 0.1s ease-out 1s;
+  transition: background-color 0.1s ease-out 1s;
+}
+.step {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+form {
+  height: 100dvh;
+}
+
+.container {
+  display: none;
+  height: 100dvh;
+  background-color: var(--backgroud-color);
+}
+
+/* DESKTOP  DESKTOP */
+@media (min-width: 768px) {
+  /*  DESKTOP */
+  .desktop {
+    display: flex;
+    flex: 1;
+    /* flex-direction: column; */
+    min-height: 100dvh;
+  }
+
+  .field-screen {
+    display: flex;
+    flex: 1;
+    min-height: 100dvh;
+  }
+
+  .left-section {
+    flex: 1;
+    background-image: url(../images/welcome_left.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right-section {
+    color: var(--main-text-color);
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .background-right-section-step1 {
+    background-image: url(../images/welcome_right.png);
+  }
+
+  .buttons {
+    margin-bottom: 300px;
+  }
+
+  .logo {
+    width: 140px;
+    height: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .title-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .title-container-username {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .title h1 {
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 8px var(--backgroud-color);
+  }
+
+  .with-50 {
+    width: 80%;
+  }
+
+  .subtitle h1 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    /* margin:20px; */
+  }
+
+  .subtitle p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .buttons h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .buttons p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .step-button {
+    position: relative;
+    padding-right: 30px;
+    text-align: center;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    width: 341.412px;
+    height: 53.732px;
+    text-align: center;
+    font-family: "Mundial";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .arrow-button {
+    position: relative;
+  }
+  .arrow-button:after {
+    content: "âž”";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 100 !important;
+  }
+  /* .step-button::after {
+		content: 'â†’'; 
+		position: absolute; 
+		right: 20px; 
+		top: 50%; 
+		transform: translateY(-50%); 
+		font-size: 22px; 
+		font-style: normal;
+		font-weight: 600;
+	} */
+
+  .content {
+    display: flex;
+    flex: 1;
+  }
+
+  /* Footer  DESKTOP */
+
+  .footer-copyright {
+    font-size: 12px;
+    color: var(--footer-text-color);
+    text-align: right;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 40px;
+    background-color: #d6d6d6;
+    color: var(--footer-text-color);
+  }
+
+  footer ul {
+    color: var(--footer-text-color);
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+  }
+
+  footer li {
+    margin: 0 20px !important;
+  }
+  footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-family: var(--font-mundial);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100 !important;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+
+  /*STEP 3 /*
+	
+		/* STEP 3 DESKTOP*/
+
+  .background-women-color {
+    background-color: var(--main-color);
+  }
+  .background-trans-color {
+    background-color: var(--purple-color);
+  }
+  .background-both-color {
+    background-color: var(--alternative-color);
+  }
+
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  .margin-medium {
+    margin-bottom: 100px;
+  }
+  .image-container {
+    flex: 1;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-option {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Botones DESKTOP */
+  .option-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .option-button-desktop {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+
+    font-family: var(--font-mundial);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32.96px; /* 137.5% */
+    letter-spacing: -0.3px;
+  }
+
+  .option-button-desktop.selected {
+    background-color: var(--main-color);
+  }
+
+  /* Age Range  DESKTOP */
+  .range-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  .double_range_slider_box {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    /* background: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: justify;
+  }
+
+  .double_range_slider {
+    width: 90%;
+    height: 10px;
+    position: relative;
+    background-color: #dddddd;
+    border-radius: 20px;
+  }
+  .range_track {
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    background-color: var(--main-color);
+  }
+
+  .minvalue {
+    position: relative;
+    padding: 15px 20px;
+    background: transparent;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+
+    font-size: 1rem;
+  }
+  .maxvalue {
+    position: relative;
+    padding: 15px 20px;
+    background: transparent;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+
+    font-size: 1rem;
+  }
+
+  .double_range_slider input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input::-webkit-slider-thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 3px solid #fafafa;
+    background-color: var(--main-color);
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-bottom: 1px;
+  }
+  input::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-color: var(--main-color);
+    pointer-events: auto;
+    -moz-appearance: none;
+    cursor: pointer;
+    margin-top: 30%;
+  }
+
+  /* STEP 4 DESKTOP */
+
+  .background-right-section-step4 {
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(
+      45deg,
+      var(--alternative-color),
+      var(--main-color)
+    );
+  }
+
+  .heart-container-step4 {
+    flex: 1;
+    position: relative;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heart-image-step4 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/heart-backgroud.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .interests-container {
+    display: flex;
+    text-align: center;
+    max-width: 65%;
+  }
+
+  .interests-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .interest-btn {
+    background-color: var(--second-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .interest-btn.active {
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    transform: scale(1.1);
+  }
+  .counter {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    background: none;
+    background-color: none;
+    margin-bottom: 40px;
+    color: var(--alternative-color);
+  }
+
+  /* STEP 5 */
+  .highlight {
+    color: var(--main-color);
+  }
+  .image-container-right {
+    flex: 1;
+    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cake-image-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/cake.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container-mobile {
+    display: none;
+  }
+
+  .age-center-content {
+    align-items: normal;
+  }
+
+  .age-buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .age-button-desktop {
+    background-color: var(--second-color);
+    color: rgb(212, 212, 212);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .age-button-desktop.active {
+    background-color: var(--main-color);
+  }
+
+  /* STEP 6 Username DESKTOP */
+
+  .username-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .username-container input {
+    position: relative;
+  }
+
+  .username-input-desktop {
+    width: 100%;
+    max-width: 340px;
+    height: 53.732px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .username-input-desktop::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .username-input-desktop:focus {
+    border-color: #ff5500;
+  }
+
+  .username-image-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/username-step-image.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* STEP 7 EMAIL */
+
+  .step__field__error {
+    margin: 2px 0;
+    margin-bottom: 15px;
+    color: #ed4653;
+    font-weight: 200;
+    font-size: 1.15rem;
+    width: 80%;
+  }
+  .step__field__error a {
+    color: #b5b5b5;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+  .email-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  .email-container input {
+    position: relative;
+  }
+  .email-input-desktop {
+    width: 100%;
+    max-width: 340px;
+    height: 53.732px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .email-input-desktop::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .email-input-desktop:focus {
+    border-color: #ff5500;
+  }
+
+  .email-image-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/email-step-locker.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .line-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 0 10px;
+  }
+
+  .text {
+    font-size: 16px;
+    color: #f2f2f2;
+  }
+  .google-button-container {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 8px;
+    height: 80px;
+  }
+  .GoogleSignInButton {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-height: unset !important;
+    max-width: unset !important;
+  }
+
+  .terms-email-step {
+    margin-top: 140px;
+    display: flex;
+    width: 100%;
+    max-width: 340px;
+  }
+  .terms-email-step p {
+    font-size: 12px;
+  }
+
+  .terms-password-step {
+    max-width: 330px;
+    font-size: 10px !important;
+    line-height: 16px;
+    text-align: center;
+    margin: 10px auto 0;
+  }
+  .terms-password-step a {
+    font-size: 10px;
+    color: var(--footer-text-color);
+  }
+  .terms {
+    font-size: 10px;
+  }
+  .terms p {
+    font-size: 10px;
+  }
+  .terms-password-step p {
+    font-size: 10px;
+  }
+  .max-width-340 {
+    max-width: 340px;
+  }
+
+  /* STEP 8 Password DESKTOP */
+  .password-image-right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/password-step-image.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .password-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .password-container input {
+    position: relative;
+  }
+  .password-wrapper {
+    width: 100%;
+    max-width: 340px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .password-input-desktop {
+    width: 100%;
+    max-width: 340px;
+    height: 53.732px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .password-input-desktop::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .password-input-desktop:focus {
+    border-color: #ff5500;
+    box-shadow: 0 0 5px rgba(255, 85, 0, 0.5);
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #888;
+  }
+
+  .toggle-password:focus {
+    color: #ff5500;
+  }
+}
+/* END DESKTOP */
+
+/*  MOBILE */
+@media (max-width: 767px) {
+  /*  MOBILE */
+  .mobile {
+    display: block;
+  }
+
+  .highlight {
+    color: var(--main-color);
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+
+  footer {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  footer ul {
+    padding-bottom: 10px !important;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: var(--backgroud-color);
+  }
+  footer li {
+    margin: 0 20px !important;
+  }
+  footer a {
+    color: #8c8f91;
+    text-decoration: none;
+    font-family: var(--font-mundial);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100 !important;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--backgroud-color);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: #959292;
+    margin: 0 5px;
+    font-weight: 500;
+  }
+
+  .footer-links a {
+    font-size: 14px !important;
+  }
+
+  .footer-link:hover {
+    color: #ff4d4d;
+  }
+
+  .footer-links span {
+    color: #fff;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+    color: #999;
+  }
+
+  .background-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        var(--backgroud-color),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/welcome_mobile.png);
+    /* background-image: url(../images/welcome_mobile.png); */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .background-section-step2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Step2_Mobile.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    position: absolute;
+    color: var(--main-text-color);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .content-low {
+    bottom: 20px;
+  }
+
+  .logo {
+    width: 124px;
+    height: 45.144px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .logo-step1 {
+    width: 124px;
+    height: 45.144px;
+    font-weight: bold;
+
+    margin-bottom: -10px;
+  }
+
+  .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title h1 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    letter-spacing: 0.8px;
+    text-shadow: 0 0 8px var(--backgroud-color);
+  }
+  .width-80 {
+    width: 80%;
+  }
+  .subtitle {
+    color: var(--main-text-color);
+  }
+  .subtitle h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .subtitle p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .step-button {
+    position: relative;
+    padding-right: 30px;
+    text-align: center;
+    width: 95%;
+    height: 53.732px;
+    padding: 16px 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .arrow-button {
+    position: relative;
+  }
+  .arrow-button:after {
+    content: "âž”";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 100 !important;
+  }
+
+  /* STEP 3 MOBILE*/
+  .image-container {
+    position: relative;
+    height: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-option {
+    position: absolute;
+    /* width: 80%; */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .option-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .option-button-mobile {
+    background-color: var(--second-color);
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .option-button-mobile.selected {
+    background-color: var(--main-color);
+  }
+  /*
+	.option-button:hover {
+		background-color: #555;
+	}*/
+
+  /* Age Range  MOBILE */
+  .range-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+  }
+  .double_range_slider_box {
+    position: relative;
+    width: 92%;
+    height: 80px;
+    /* background: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  .double_range_slider {
+    width: 98%;
+    height: 10px;
+    position: relative;
+    background-color: #dddddd;
+    border-radius: 20px;
+  }
+  .range_track {
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    background-color: var(--main-color);
+  }
+
+  .minvalue {
+    position: relative;
+    padding: 10px 15px;
+    background: transparent;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+
+    font-size: 1rem;
+  }
+  .maxvalue {
+    position: relative;
+    padding: 10px 15px;
+    background: transparent;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+
+    font-size: 1rem;
+  }
+
+  .double_range_slider input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input::-webkit-slider-thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 3px solid #fafafa;
+    background-color: var(--main-color);
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-bottom: 1px;
+  }
+  input::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    background-color: var(--main-color);
+    pointer-events: auto;
+    -moz-appearance: none;
+    cursor: pointer;
+    margin-top: 30%;
+  }
+
+  /*STEP 4 MOBILE*/
+  .heart-container-step4 {
+    flex: 1;
+    position: relative;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+  }
+
+  .heart-image-step4 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/heart-backgroud.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .counter-mobile {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    background: none;
+    background-color: none;
+    color: var(--alternative-color);
+  }
+
+  .interest-slider {
+    width: 98%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .rows-container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+  }
+
+  .rows-container::-webkit-scrollbar {
+    height: 1px;
+  }
+
+  .rows-container::-webkit-scrollbar-thumb {
+    background: var(--backgroud-color);
+    border-radius: 4px;
+  }
+
+  .rows-container::-webkit-scrollbar-track {
+    background: var(--backgroud-color);
+  }
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .interest-btn-mobile {
+    /* flex: 1; */
+    /* flex: 0 0 auto;  */
+    padding: 10px 20px;
+    white-space: nowrap;
+    scroll-snap-align: center;
+    background-color: var(--second-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .interest-btn-mobile.active {
+    background-color: var(--main-color);
+  }
+
+  /* STEP 5 MOBILE */
+  .image-container-mobile {
+    position: relative;
+    height: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container-email {
+    height: 30%;
+  }
+
+  .cake-image-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/cake.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .age-buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .age-button-mobile {
+    background-color: var(--second-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .age-button-mobile.active {
+    background-color: var(--main-color);
+  }
+
+  /* STEP 6 Username MOBILE */
+
+  .username-image-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/username-step-image.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .username-container {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  .username-container input {
+    position: relative;
+  }
+  .username-input-mobile {
+    width: 95%;
+    max-width: 380px;
+    height: 54px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .username-input-mobile::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .title-container-username {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 85%; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* STEP 7 EMAIL MOBILE */
+
+  .step__field__error {
+    margin: 2px 0;
+    margin-bottom: 15px;
+    color: #ed4653;
+    font-weight: 200;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .step__field__error a {
+    color: #b5b5b5;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  .email-image-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/email-step-locker.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .email-container {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  .email-container input {
+    position: relative;
+  }
+  .email-input-mobile {
+    width: 95%;
+    max-width: 380px;
+    height: 54px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .email-input-mobile::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .title-container-email {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 85%; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .line-container {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 78%; */
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 0 10px;
+  }
+
+  .text {
+    font-size: 16px;
+    color: #f2f2f2;
+  }
+  .google-button-container {
+    width: 100%;
+    /* max-width: 375px; */
+    border-radius: 8px;
+    height: 100%;
+  }
+  .GoogleSignInButton {
+    max-width: unset !important;
+    max-height: unset !important;
+    height: 100%;
+  }
+
+  /* STEP 8 Password MOBILE */
+
+  .password-image-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    object-fit: fill;
+    opacity: 1;
+    background-image: url(../images/password-step-image.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .password-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .password-container input {
+    position: relative;
+  }
+  .password-wrapper {
+    width: 95%;
+    max-width: 380px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .password-input-mobile {
+    width: 100%;
+    max-width: 380px;
+    height: 53.732px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .password-input-mobile::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .password-input-mobile:focus {
+    border-color: #ff5500;
+    box-shadow: 0 0 5px rgba(255, 85, 0, 0.5);
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #888;
+  }
+
+  .toggle-password:focus {
+    color: #ff5500;
+  }
+
+  .terms-email-step {
+    display: flex;
+    width: 100%;
+    max-width: 340px;
+    margin-top: 15px;
+  }
+  .terms-email-step p {
+    font-size: 12px;
+  }
+
+  .terms-password-step {
+    max-width: 330px;
+    font-size: 10px !important;
+    line-height: 16px;
+    text-align: center;
+    margin: 10px auto 0;
+  }
+  .terms-password-step a {
+    font-size: 10px;
+    color: var(--footer-text-color);
+  }
+  .terms {
+    font-size: 10px;
+  }
+  .terms p {
+    font-size: 10px;
+  }
+  .terms-password-step p {
+    font-size: 10px;
+  }
+}
+/* END MOBILE */
+
+/*** Step effects ***/
+.step[data-effect="zoom"] {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+.step[data-effect="left"] {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.step[data-effect="up"] {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.step[data-effect="turn"] {
+  -webkit-transform: rotate3d(0, 1, 0, 90deg);
+  -moz-transform: rotate3d(0, 1, 0, 90deg);
+  -ms-transform: rotate3d(0, 1, 0, 90deg);
+  -o-transform: rotate3d(0, 1, 0, 90deg);
+  transform: rotate3d(0, 1, 0, 90deg);
+}
+
+.step[data-step="1"] {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+/* Temporary GSI fix */
+.GoogleSignInButton--responsive-google .GoogleSignInButton__appearance {
+  display: none !important;
+}
+.GoogleSignInButton--setup #g_id_onload {
+  visibility: visible !important;
+}
+.GoogleSignInButton--setup .g_id_signin {
+  position: static !important;
+  opacity: 1 !important;
+  height: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.g_id_signin,
+.g_id_signin iframe {
+  width: empty !important; /* hacky hacky */
+}
